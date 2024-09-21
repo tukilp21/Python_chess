@@ -1,0 +1,32 @@
+
+cách 1:
+- Tạo list chứa 32 con cờ (có thể tách thành W-B (16-16))
+- Mỗi con cờ là list chứa những nước đi khả thi
+- Vua di chuyển trong vùng có thể di chuyển thì sẽ tính là chiếu
+- Nếu mọi lối đều bí thì
+1. Vua đang bị chiếu - Chiếu bí
+2. Vua đang không bị chiếu và không còn nước đi nào khác ngoài đi vua - Hòa
+
+
+
+cách 2:
+* Xét vua có bị chiếu k ? --> function chieu_k()
+    - Đang cầm vua trắng
+    - Xét các quân đen còn lại
+    - nhập vào move của mỗi quân đen (vị trí của nó, vị trí của vua)
+    --> xem xem nó có move đc v 
+        --> nếu đc => vua đg bị chiếu ====> return True
+        --> nếu k ========================> return False
+
+* Xét vua có bị chiếu bí k: 
+    - VD vua đang ở (3,3)
+    - Chạy loop, cho vua ở 8 vị trí xung quang (3,3)
+    - Mỗi lần vua ở 1 vị trí giả định, chạy function chieu_k()
+    --> Nếu bị chiếu --> return chiếu bí
+
+* Xét hòa cờ:
+    - 
+
+
+
+    
